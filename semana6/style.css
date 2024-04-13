@@ -1,0 +1,23 @@
+.encabezado1{
+    padding: 10px;
+    background-color: green;
+    color: white;
+}
+.texto-azul{
+    color: blue;
+}
+.imagen{
+    width: 100%;
+    border-radius: 50%;
+}
+.encabezado2{
+    color: red;
+}
+.enlace1{
+    color: green;
+    text-decoration: underline;
+}
+.video1{
+    width: 600px;
+    height: 400px;
+}
