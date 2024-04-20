@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+}
+.header{
+    background-color: salmon;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: saddlebrown;
+    font-family: monospace;
+}
+.header__title{
+    font-size: 3em;
+    font-family: impact;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.header__input{
+    margin-right: 30px;
+}
+.nav{
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+}
+.nav__element{
+    color: white;
+    font-family: "arial black";
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 10% auto 15%;
+}
+
+.lateral-l{
+    grid-column: 1;
+}
+.lateral-article{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: salmon;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: arial;
+}
+.lateral-article__title{
+    font-weight: bold;
+
+}
+
+
+.lateral-r{
+    grid-column: 3;
+}
+
+.articles{
+    grid-column: 2;
+    margin-inline: 10px;
+}
+
+.article{
+    font-family: arial;
+    border-style: solid;
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+    border-color: blue;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+.article__title{
+    font-family: "arial black";
+    font-size: 2em;
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+.right{
+    background-color: salmon;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.article__image{
+    grid-column: 1;
+    grid-row: 2;
+    margin: 20px 20px 0px 0px;
+}
+.article__image img{
+    margin: 0;
+    width: 100px;
+}
+.article__content{
+    grid-column: 2;
+    grid-row: 2;
+}
+.article__link{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    font-family: monospace;
+    font-weight: bold;
+    padding: 10px;
+    padding-inline: 30px;
+    background-color: blue;
+    color: white;
+}
+.footer a:link{
+    color: white;
+}
+.footer a:visited{
+    color: white;
+}
