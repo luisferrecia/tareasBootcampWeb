@@ -1,0 +1,47 @@
+body{
+    background-image: url("https://www.creativefabrica.com/wp-content/uploads/2022/10/18/Abstract-Wallpaper-vector-Graphics-42173436-1.jpg");
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    color: rgb(255, 0, 187);
+}
+.tarjeta{
+    
+    background-color: rgba(64, 0, 47, 0.700);
+    font-family:  'Trebuchet MS', sans-serif;
+    color: rgb(255, 0, 187);
+    padding: 10px;
+    border-radius: 10px;
+    width: 22%;
+}
+.tarjeta--imagen{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 187);
+    margin: 0 auto;
+    background-image: url("iconM.jpg");
+    background-size: 100px 100px;
+}
+.fem{
+    background-image: url("iconF.jpg");
+}
+
+hr{
+    border-color: rgb(255, 0, 187);
+}
+
+.tarjeta--nombre, .tarjeta--titulo{
+    text-align: center;
+}
+
+.tarjeta--desc{
+    text-align: justify;
+}
+
+.paquete{
+    display: flex;
+    justify-content: space-between;
+}

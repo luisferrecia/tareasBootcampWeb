@@ -1,0 +1,119 @@
+---
+	let apis = [
+		'https://97877a7d-e0d5-44d8-b07f-ea3e8b682164.mock.pstmn.io/nancy',
+		'https://97877a7d-e0d5-44d8-b07f-ea3e8b682164.mock.pstmn.io/jose',
+		'https://97877a7d-e0d5-44d8-b07f-ea3e8b682164.mock.pstmn.io/ivan',
+		'https://97877a7d-e0d5-44d8-b07f-ea3e8b682164.mock.pstmn.io/jonathan'
+	]
+	
+	const respuesta1 = await fetch(apis[0]);
+	const datos1 = await respuesta1.json();
+
+	const respuesta2 = await fetch(apis[1]);
+	const datos2 = await respuesta2.json();
+	
+	const respuesta3 = await fetch(apis[2]);
+	const datos3 = await respuesta3.json();
+
+	const respuesta4 = await fetch(apis[3]);
+	const datos4 = await respuesta4.json();
+
+	//console.log(datos);
+
+	
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href="/style.css">
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Semana 10</title>
+	</head>
+	<body>
+
+		{apis.map((item) => {
+
+		})
+		}
+
+		
+
+		<header><h1>TARJETAS DE DATOS</h1></header>
+		
+
+		<div class="paquete">
+
+			<div class="tarjeta">
+				<div class="tarjeta--imagen fem"></div>
+				<p class="tarjeta--nombre"><strong>{datos1.name}</strong></p>
+				<p class="tarjeta--titulo">{datos1.course.title} <i>({datos1.course.duration})</i></p>
+				<hr>
+				<p class="tarjeta--desc">{datos1.course.description}</p>
+				<hr>
+				<ul class="tarjeta--cursos">
+					{datos1.course.topics_covered.map((item) => {
+						return <li>{item}</li>
+					})
+				}
+				</ul>
+			</div>
+
+			<div class="tarjeta">
+				<div class="tarjeta--imagen"></div>
+				<p class="tarjeta--nombre"><strong>{datos2.name}</strong></p>
+				<p class="tarjeta--titulo">{datos2.course.title} <i>({datos2.course.duration})</i></p>
+				<hr>
+				<p class="tarjeta--desc">{datos2.course.description}</p>
+				<hr>
+				<ul class="tarjeta--cursos">
+					{datos2.course.topics_covered.map((item) => {
+						return <li>{item}</li>
+					})
+				}
+				</ul>
+			</div>
+
+			<div class="tarjeta">
+				<div class="tarjeta--imagen"></div>
+				<p class="tarjeta--nombre"><strong>{datos3.name}</strong></p>
+				<p class="tarjeta--titulo">{datos3.course.title} <i>({datos3.course.duration})</i></p>
+				<hr>
+				<p class="tarjeta--desc">{datos3.course.description}</p>
+				<hr>
+				<ul class="tarjeta--cursos">
+					{datos3.course.topics_covered.map((item) => {
+						return <li>{item}</li>
+					})
+				}
+				</ul>
+			</div>
+
+			<div class="tarjeta">
+				<div class="tarjeta--imagen"></div>
+				<p class="tarjeta--nombre"><strong>{datos4.name}</strong></p>
+				<p class="tarjeta--titulo">{datos4.course.title} <i>({datos4.course.duration})</i></p>
+				<hr>
+				<p class="tarjeta--desc">{datos4.course.description}</p>
+				<hr>
+				<ul class="tarjeta--cursos">
+					{datos4.course.topics_covered.map((item) => {
+						return <li>{item}</li>
+					})
+				}
+				</ul>
+			</div>
+
+		</div>
+
+
+
+		
+		
+
+		
+	</body>
+</html>
